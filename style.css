@@ -2,6 +2,7 @@
     --text-color: #F0F0F0;
     --subdued-color: #a6a6a6;
     --bg-color: #0F0F0F;
+    --link-color: #22b02c;
 }
 
 body {
@@ -12,6 +13,15 @@ body {
 
 h1 {
     text-align: center;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 main p {
