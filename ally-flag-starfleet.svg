@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1440"
+   height="960"
+   viewBox="0 0 1440 960"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="ally-flag-starfleet-delta.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title763">LGBTQIA+ Ally Flag: Starfleet Delta Version</title>
+  <desc id="desc2">The insignia of Starfleet from the <a id="a2" href="https://www.startrek.com/">Star Trek</a> franchise.</desc>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="0.24214724"
+     inkscape:cx="567.83632"
+     inkscape:cy="939.511"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid132"
+       spacingy="160"
+       spacingx="80"
+       originx="-80" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask39557">
+      <path
+         id="path39559"
+         style="display:inline;fill:#ffffff;fill-opacity:0.999913;stroke-width:3.99999;stroke-linecap:round;paint-order:stroke markers fill"
+         inkscape:label="Delta"
+         d="M 720,-1.0399999e-5 C 547.35296,195.61834 400.23485,624.51602 389.38671,960 589.35285,700.1337 798.01379,578.78675 836.69729,594.51564 883.41629,613.51177 958.46459,720.65748 1028.2187,821.2422 1003.3526,561.73239 860.02829,176.27625 720,-1.0399999e-5 Z M 720,95.999991 752.28124,464.00001 h 55.71875 L 755.44921,500.12889 759.99998,552 720,524.5 680.00001,552 l 4.55078,-51.87111 -52.55078,-36.12888 h 55.71874 z" />
+    </mask>
+  </defs>
+  <g
+     inkscape:label="Black and White"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;paint-order:stroke markers fill"
+       id="rect928"
+       width="1440"
+       height="960"
+       x="0"
+       y="0"
+       inkscape:label="white" />
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:4;stroke-linecap:round;paint-order:stroke markers fill"
+       id="rect824"
+       width="1440"
+       height="160"
+       x="0"
+       y="0"
+       inkscape:label="black 1" />
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:4;stroke-linecap:round;paint-order:stroke markers fill"
+       id="rect824-3"
+       width="1440"
+       height="160"
+       x="0"
+       y="320"
+       inkscape:label="black 2" />
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:4;stroke-linecap:round;paint-order:stroke markers fill"
+       id="rect824-6"
+       width="1440"
+       height="160"
+       x="0"
+       y="640"
+       inkscape:label="black 3" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Arch">
+    <g
+       id="g6718"
+       inkscape:label="stripes"
+       sodipodi:insensitive="true"
+       mask="url(#mask39557)">
+      <rect
+         style="fill:#e40303;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;paint-order:stroke markers fill"
+         id="rect2861"
+         width="1440"
+         height="160"
+         x="-1.4210855e-14"
+         y="0"
+         inkscape:label="red" />
+      <rect
+         style="fill:#ff8c00;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;paint-order:stroke markers fill"
+         id="rect2984"
+         width="1440"
+         height="160"
+         x="-1.4210855e-14"
+         y="160"
+         inkscape:label="orange" />
+      <rect
+         style="fill:#ffed00;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;paint-order:stroke markers fill"
+         id="rect3054"
+         width="1440"
+         height="160"
+         x="-1.4210855e-14"
+         y="320"
+         inkscape:label="yellow" />
+      <rect
+         style="fill:#008026;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;paint-order:stroke markers fill"
+         id="rect3056"
+         width="1440"
+         height="160"
+         x="-1.4210855e-14"
+         y="480"
+         inkscape:label="green" />
+      <rect
+         style="fill:#004dff;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;paint-order:stroke markers fill"
+         id="rect3058"
+         width="1440"
+         height="160"
+         x="-1.4210855e-14"
+         y="640"
+         inkscape:label="blue" />
+      <rect
+         style="fill:#750787;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;paint-order:stroke markers fill"
+         id="rect3060"
+         width="1440"
+         height="160"
+         x="-1.4210855e-14"
+         y="800"
+         inkscape:label="purple" />
+    </g>
+  </g>
+  <metadata
+     id="metadata761">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+        <dc:title>LGBTQIA+ Ally Flag: Starfleet Delta Version</dc:title>
+        <dc:date>2026-04-25</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Mathias Panzenböck</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
