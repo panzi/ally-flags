@@ -18,14 +18,41 @@ FLAGS = [
     "ally-flag-arch.svg",
 ]
 
-def inner_xml(element: ET.Element) -> str:
-    buf: list[str] = []
+def _inner_xml(element: ET.Element, buf: list[str]) -> None:
     text = element.text
+    tag = element.tag
+
+    # WTF!?
+    if tag.startswith('{'):
+        tag = tag[tag.find('}') + 1:]
+
+    buf.append('<')
+    buf.append(tag)
+    for key, value in element.attrib.items():
+        if key != "id":
+            buf.append(' ')
+            buf.append(escape(key))
+            buf.append('="')
+            buf.append(escape(value))
+            buf.append('"')
+    buf.append('>')
+
     if text:
         buf.append(escape(text))
-    tostring = ET.tostring
-    buf.extend(tostring(child, encoding="unicode") for child in element)
 
+    for child in element:
+        _inner_xml(child, buf)
+        tail = child.tail
+        if tail:
+            buf.append(escape(tail))
+
+    buf.append('</')
+    buf.append(tag)
+    buf.append('>')
+
+def inner_xml(element: ET.Element) -> str:
+    buf: list[str] = []
+    _inner_xml(element, buf)
     return "".join(buf)
 
 def main() -> None:
