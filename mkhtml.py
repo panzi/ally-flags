@@ -37,7 +37,7 @@ def main() -> None:
         indexfp.write(
 f"""\
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Ally Flag Variations</title>
@@ -46,6 +46,7 @@ f"""\
 <body data-flags="{escape(' '.join(splitext(flag)[0] for flag in FLAGS))}">
 <h1>Ally Flag Variations</h1>
 <main>
+<p>Some variations on the LGBTQIA+ ally flag/straight ally pride flag, just for fun.</p>
 <ul class="flags">
 """)
         for flag in FLAGS:
