@@ -1,5 +1,6 @@
 .*
 *.png
 *.zip
+/dist
 /tmp
 !.gitignore

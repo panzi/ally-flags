@@ -1,0 +1,195 @@
+:root {
+    --text-color: #F0F0F0;
+    --subdued-color: #a6a6a6;
+    --bg-color: #0F0F0F;
+}
+
+body {
+    font-family: sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+}
+
+.flags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.flag {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 240px;
+}
+
+.flag figure {
+    margin: 0;
+    padding: 0;
+}
+
+.flag img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.flag figcaption {
+    text-align: center;
+}
+
+.flag figcaption p {
+    font-size: 0.8rem;
+    margin: 0.25rem 0 0 0;
+}
+
+.downloads-label {
+    font-size: 0.75rem;
+}
+
+.downloads {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.download {
+    font-size: 0.8rem;
+    border-left: 1px solid #082009;
+}
+
+.download,
+.downloads-label {
+    display: inline-block;
+    line-height: 1rem;
+    padding: 0.25rem;
+    color: #F0F0F0;
+    text-shadow: 1px 1px #0F0F0F;
+    text-decoration: none;
+    background: linear-gradient(#22b02c, #114014);
+}
+
+.download:hover {
+    background: linear-gradient(#17551b, #1c7f23);
+}
+
+.downloads > :first-child {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.downloads > :last-child {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+small {
+    display: block;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 5rem 1rem 1rem 1rem;
+    color: var(--subdued-color);
+}
+
+small a {
+    color: inherit;
+    text-decoration: underline dashed;
+    transition: color 150ms;
+}
+
+small a:hover {
+    color: var(--text-color);
+}
+
+dialog {
+    border: none;
+    background: var(--bg-color);
+    color: inherit;
+    padding: 0;
+    overflow: visible;
+    margin: auto;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+    margin: 0;
+    padding: 0;
+}
+
+dialog {
+    max-width: 100svw;
+    max-width: 100vw;
+    max-height: 100vh;
+    max-height: 100svh;
+}
+
+dialog img {
+    max-width: 100svw;
+    max-width: 100vw;
+    max-height: 100vh;
+    max-height: 100svh;
+}
+
+button {
+    appearance: none;
+    color: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+dialog button[command=close] {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transition: opacity 150ms;
+}
+
+dialog:hover button[command=close] {
+    opacity: 1;
+}
+
+.dialog-nav {
+    opacity: 0;
+    transition: opacity 150ms;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-nav:hover {
+    opacity: 1;
+}
+
+.dialog-prev {
+    left: 0;
+}
+
+.dialog-next {
+    right: 0;
+}
