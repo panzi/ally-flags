@@ -9,6 +9,8 @@ from html import escape
 from shutil import copy
 from subprocess import check_call
 
+from PIL import Image
+
 FLAGS = [
     "ally-flag.svg",
     "ally-flag-starfleet.svg",
@@ -67,8 +69,15 @@ f"""\
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ally Flag Variations</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Some variations on the LGBTQIA+ ally flag/straight ally pride flag, just for fun.">
+<meta name="author" content="Mathias Panzenböck">
+<meta property="og:image" content="https://panzi.github.io/ally-flags/preview.png">
+<meta property="og:image:width" content="288">
+<meta property="og:image:height" content="192">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body data-flags="{escape(' '.join(splitext(flag)[0] for flag in FLAGS))}">
@@ -142,6 +151,23 @@ f"""\
 </body>
 </html>
 """)
+
+    preview_path = join_path('dist', 'preview.png')
+    print(preview_path)
+
+    tile_width = 288
+    tile_height = 192
+    margin = 40
+
+    images = [Image.open(join_path('dist', splitext(flag)[0] + '.png')).resize((tile_width, tile_height)) for flag in FLAGS]
+    preview = Image.new('RGB', (tile_width * 3 + margin * 4, tile_height * 2 + margin * 3), 0x0F0F0F)
+
+    for column in range(2):
+        for row in range(3):
+            image = images[column * 3 + row]
+            preview.paste(image, (margin + row * (tile_width + margin), margin + column * (tile_height + margin)))
+
+    preview.save(preview_path)
 
 if __name__ == '__main__':
     main()
