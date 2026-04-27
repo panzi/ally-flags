@@ -62,6 +62,12 @@ def main() -> None:
     copy("style.css", join_path("dist", "style.css"))
     copy("script.js", join_path("dist", "script.js"))
 
+    tile_width = 288
+    tile_height = 192
+    margin = 40
+    preview_width = tile_width * 3 + margin * 4
+    preview_height = tile_height * 2 + margin * 3
+
     with open(join_path("dist", "index.html"), "w") as indexfp:
         indexfp.write(
 f"""\
@@ -75,8 +81,8 @@ f"""\
 <meta name="description" content="Some variations on the LGBTQIA+ ally flag/straight ally pride flag, just for fun.">
 <meta name="author" content="Mathias Panzenböck">
 <meta property="og:image" content="https://panzi.github.io/ally-flags/preview.png">
-<meta property="og:image:width" content="288">
-<meta property="og:image:height" content="192">
+<meta property="og:image:width" content="{preview_width}">
+<meta property="og:image:height" content="{preview_height}">
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -155,12 +161,8 @@ f"""\
     preview_path = join_path('dist', 'preview.png')
     print(preview_path)
 
-    tile_width = 288
-    tile_height = 192
-    margin = 40
-
     images = [Image.open(join_path('dist', splitext(flag)[0] + '.png')).resize((tile_width, tile_height)) for flag in FLAGS]
-    preview = Image.new('RGB', (tile_width * 3 + margin * 4, tile_height * 2 + margin * 3), 0x0F0F0F)
+    preview = Image.new('RGB', (preview_width, preview_height), 0x0F0F0F)
 
     for column in range(2):
         for row in range(3):
